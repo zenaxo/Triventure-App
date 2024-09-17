@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CEAD4B72C9AFF4B00849445 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CEAD4B62C9AFF4B00849445 /* GoogleService-Info.plist */; };
+		1CEAD4BA2C9B0E2500849445 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1CEAD4B92C9B0E2500849445 /* FirebaseAnalytics */; };
 		8834AD042C996B340041CB8E /* Triventure_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8834AD032C996B340041CB8E /* Triventure_AppApp.swift */; };
 		8834AD062C996B340041CB8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8834AD052C996B340041CB8E /* ContentView.swift */; };
 		8834AD082C996B360041CB8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8834AD072C996B360041CB8E /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CEAD4B62C9AFF4B00849445 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8834AD002C996B340041CB8E /* Triventure App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Triventure App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8834AD032C996B340041CB8E /* Triventure_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triventure_AppApp.swift; sourceTree = "<group>"; };
 		8834AD052C996B340041CB8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CEAD4BA2C9B0E2500849445 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +58,7 @@
 				8834AD032C996B340041CB8E /* Triventure_AppApp.swift */,
 				8834AD052C996B340041CB8E /* ContentView.swift */,
 				8834AD072C996B360041CB8E /* Assets.xcassets */,
+				1CEAD4B62C9AFF4B00849445 /* GoogleService-Info.plist */,
 				8834AD092C996B360041CB8E /* Preview Content */,
 			);
 			path = "Triventure App";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "Triventure App";
+			packageProductDependencies = (
+				1CEAD4B92C9B0E2500849445 /* FirebaseAnalytics */,
+			);
 			productName = "Triventure App";
 			productReference = 8834AD002C996B340041CB8E /* Triventure App.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 8834ACF72C996B340041CB8E;
+			packageReferences = (
+				1CEAD4B82C9B07BF00849445 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 8834AD012C996B340041CB8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +138,7 @@
 			files = (
 				8834AD0B2C996B360041CB8E /* Preview Assets.xcassets in Resources */,
 				8834AD082C996B360041CB8E /* Assets.xcassets in Resources */,
+				1CEAD4B72C9AFF4B00849445 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1CEAD4B82C9B07BF00849445 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CEAD4B92C9B0E2500849445 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CEAD4B82C9B07BF00849445 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8834ACF82C996B340041CB8E /* Project object */;
 }
